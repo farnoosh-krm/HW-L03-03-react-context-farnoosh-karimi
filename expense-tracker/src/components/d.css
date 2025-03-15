@@ -1,0 +1,45 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-auto-rows: 250px;
+  gap: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+main .tall {
+  grid-row: span 2;
+}
+main .short {
+  grid-row: span 1;
+}
+
+@media screen and (max-width: 980px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  main {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  header nav {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+  }
+
+  nav h1 {
+    grid-column: span 4;
+    grid-row: 1;
+  }
+}

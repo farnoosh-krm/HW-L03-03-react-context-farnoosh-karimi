@@ -6,15 +6,26 @@
 }
 body {
   /* padding-bottom: 20px; */
-  background: linear-gradient(to right, rgb(153, 153, 243), rgb(255, 168, 203));
   font-family: "Poppins";
   /* min-height: 100vh; */
 }
 
 #root {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  background: linear-gradient(
+    to right,
+    rgb(247, 241, 132),
+    rgb(255, 168, 203),
+    rgb(236, 152, 251),
+    rgb(174, 202, 251)
+  );
+  margin: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  min-height: 97vh;
+
   /* min-height: 100vh; */
 }

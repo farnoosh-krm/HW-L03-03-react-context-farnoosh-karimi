@@ -8,7 +8,7 @@ import Inputs from "../Inputs/Inputs";
 const NavBarItems = () => {
   return (
     <div className="flex flex-row gap-2.5">
-      <Inputs type={"text"} value={"search..."} icon={searchInIcon} />
+      <Inputs type={"text"} placeholder={"search..."} icon={searchInIcon} />
 
       <a className="flex flex-row items-center" href="#">
         <img className="w-[25px] h-[25px]" src={profileIcon} />
@@ -16,11 +16,11 @@ const NavBarItems = () => {
       </a>
 
       <a href="#">
-        <img className="w-[25px] h-[25px]" src={settingInIcon} />
+        <img className="w-[25px] h-[25px] mt-2" src={settingInIcon} />
       </a>
 
       <a href="#">
-        <img className="w-[25px] h-[25px]" src={bellInIcon} />
+        <img className="w-[25px] h-[25px] mt-2" src={bellInIcon} />
       </a>
     </div>
   );

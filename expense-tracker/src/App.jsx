@@ -7,21 +7,24 @@ import Navbar from "./components/NavBar/Navbar";
 import Tabels from "./components/Tables/Tables";
 import MiddleLayout from "./components/Layout/MiddleLayout";
 import BillsLayout from "./components/Bills/BillsLayout";
+import BillProvider from "./components/Bills/BillsContext";
 
 function App() {
   return (
     <>
-      <Layout>
-        <MenuBar />
-        <MiddleLayout>
-          <Navbar />
+      <BillProvider>
+        <Layout>
+          <MenuBar />
+          <MiddleLayout>
+            <Navbar />
 
-          <EnterBills />
-          <ShowBills />
+            <EnterBills />
+            <ShowBills />
 
-          <Tabels />
-        </MiddleLayout>
-      </Layout>
+            <Tabels />
+          </MiddleLayout>
+        </Layout>
+      </BillProvider>
     </>
   );
 }
